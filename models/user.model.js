@@ -11,6 +11,6 @@ const userModel=new mongooseModule.Schema({
     followers:[{type:String}]
 });
 
-const user=userModel.model("user",userModel);
+const user=mongooseModule.model("user",userModel);
 
 module.exports=user;
